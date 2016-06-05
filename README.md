@@ -5,7 +5,7 @@ Project closet
 
 ## Wireframe
 
-![alt text](https://github.com/luyaocheng/Closet/blob/master/Resources/WF1.png "WF1")
+![alt text](https://github.com/luyaocheng/Closet/blob/master/Resources/WF9.png "WF1")
 
 ![alt text](https://github.com/luyaocheng/Closet/blob/master/Resources/WF2.png "WF1")
 
@@ -21,4 +21,4 @@ Project closet
 
 ![alt text](https://github.com/luyaocheng/Closet/blob/master/Resources/WF8.png "WF1")
 
-![alt text](https://github.com/luyaocheng/Closet/blob/master/Resources/WF9.png "WF1")
+![alt text](https://github.com/luyaocheng/Closet/blob/master/Resources/WF1.png "WF1")
