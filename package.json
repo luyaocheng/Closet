@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "express": "^4.13.4",
+    "jquery": "^3.0.0",
     "mongoose": "^4.5.0"
   }
 }
