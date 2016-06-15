@@ -1,7 +1,9 @@
 app.controller('postDisplayController', ['$scope','$resource', 
 	function($scope, $resource){
 
-		var Post = $resource('/api/TestCollection2');
+		$scope.message = "Post Controller Test"
+
+		var Post = $resource('/api/posts');
 
 		Post.query(function(result){
 			$scope.posts = result;

@@ -4,9 +4,14 @@ var bodyParser = require('body-parser')
 var closetServerController = require('./Server/controllers/closetcontroller')
 var mongoose  = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/test2db')
+mongoose.connect('mongodb://localhost:27017/test2db', function(err){
+	if (err){
+		console.log(err)
+	}
+	console.log("Connection successful!") //Check if the DB connection successful or not
+})
 
-app.use(bodyParser())
+// app.use(bodyParser())
 
 app.get('/', function(req, res){
 	res.sendFile(__dirname + '/web_client/views/home.html')
@@ -17,7 +22,7 @@ app.use('/js', express.static(__dirname + '/web_client/js'));
 app.use('/css', express.static(__dirname + '/web_client/css'));
 app.use('/views', express.static(__dirname + '/web_client/views'));
 
-app.get('/api/TestCollection2', closetServerController.list)
+app.get('/api/posts', closetServerController.list)
 
 
 app.listen(3000, function(){
