@@ -8,6 +8,7 @@ app.get('/', function(req, res){
 // app.use('/node_modules', express.static(__dirname + '/node_modules'))
 app.use('/js', express.static(__dirname + '/web_client/js'));
 app.use('/css', express.static(__dirname + '/web_client/css'));
+app.use('/views', express.static(__dirname + '/web_client/views'));
 
 
 app.listen(3000, function(){
