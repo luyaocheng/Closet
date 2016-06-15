@@ -1,0 +1,68 @@
+{
+  "name": "angular-resource",
+  "version": "1.5.6",
+  "description": "AngularJS module for interacting with RESTful server-side data sources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.js.git"
+  },
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "rest",
+    "client-side"
+  ],
+  "author": {
+    "name": "Angular Core Team",
+    "email": "angular-core+npm@google.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "homepage": "http://angularjs.org",
+  "jspm": {
+    "shim": {
+      "angular-resource": {
+        "deps": [
+          "angular"
+        ]
+      }
+    }
+  },
+  "gitHead": "3a2ae4a8ddbbde1c7e0122a0e68857e019b35385",
+  "_id": "angular-resource@1.5.6",
+  "_shasum": "b358365c4e5f124233dac718ff39373c1aec16d6",
+  "_from": "angular-resource@1.5.6",
+  "_npmVersion": "2.15.5",
+  "_nodeVersion": "4.4.5",
+  "_npmUser": {
+    "name": "angularcore",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "b358365c4e5f124233dac718ff39373c1aec16d6",
+    "tarball": "https://registry.npmjs.org/angular-resource/-/angular-resource-1.5.6.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    },
+    {
+      "name": "petebd",
+      "email": "pete@bacondarwin.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/angular-resource-1.5.6.tgz_1464370332745_0.7366649073082954"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-resource/-/angular-resource-1.5.6.tgz"
+}

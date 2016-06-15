@@ -3,10 +3,7 @@
 <head>
 	<title>Closet - Nothing But Your Own Words.</title>
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="/css/custom.css">
-	<script type="text/javascript" src="/js/angular/angular.js"></script>
-	<script type="text/javascript" src="/js/angular-route/angular-route.js"></script>
-	<script type="text/javascript" src="/js/webclient.js"></script>			
+	<link rel="stylesheet" type="text/css" href="/css/custom.css">	
 </head>
 <body ng-controller='mainController'>
 <!-- 	<p class="sysMessage">{{sysMessage}}</p> -->
@@ -52,11 +49,16 @@
 	<div class="container">
 		<div ng-view class="subView"></div>
 	</div>
-</div>	
+</div>
 
 
 <!-- Script -->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="/css/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/js/angular/angular.js"></script>
+	<script type="text/javascript" src="/js/angular-resource/angular-resource.js"></script>
+	<script type="text/javascript" src="/js/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="/js/webclient.js"></script>			
+	<script type="text/javascript" src="/js/controllers/closetcontroller.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+{
+	"authorName" 	: "Edward",
+	"talkMode"		: "Shout",
+	"postTime"		: "Tue 20:23 Jun 14,2016",
+	"postCat"		: "Social",
+	"postBody"		: "This is a test post and I have nothing to say at this moment. I want to make an iOS and Android app as well. My goal is to be a full-stack developer!!",
+	"postLikes"		: 132000,
+	"postComments"	: [
+
+		{	
+			"authorName"	: "Luis Cheng",
+			"commentsBody"	: "Same here, I got same dream! But CA should be a better fit for me.",
+			"commentTime"	: "Tue 22:32 Jun 14, 2016"
+		},
+		{	
+			"authorName"	: "Luis Cheng",
+			"commentsBody"	: "Same here, I got same dream! But CA should be a better fit for me.",
+			"commentTime"	: "Tue 22:32 Jun 14, 2016"
+		},
+		{	
+			"authorName"	: "Luis Cheng",
+			"commentsBody"	: "Same here, I got same dream! But CA should be a better fit for me.",
+			"commentTime"	: "Tue 22:32 Jun 14, 2016"
+		}				
+
+	]
+}

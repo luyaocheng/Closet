@@ -1,4 +1,4 @@
-var app = angular.module('webClient', ['ngRoute'])
+var app = angular.module('webClient', ['ngRoute', 'ngResource'])
 
 app.config(function($routeProvider){
 

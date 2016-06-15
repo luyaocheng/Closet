@@ -1,4 +1,4 @@
-<ul class="postUl">
+<ul class="postUl" ng-controller='postDisplayController'>
 	<li class="postLi">
 		<div class="row">
 	    	<div class="col-md-6">
@@ -49,4 +49,29 @@
 			</div>
 		</div>
 	</li>	
+	<li class="postLi" ng-repeat="post in posts">
+		<div class="row">
+	    	<div class="col-md-6">
+	    		<p class="postAuthorName"><span class="glyphicon glyphicon-user"></span>{{authorName}} <span class="talkMode"> {{talkMode}}:</span></p>
+	    	</div>
+	    	<div class="col-md-6">
+	    		<span class="pull-right postDateTime">
+	    		Said on {{postTime}}
+	    		</span>
+	    	</div>
+	    </div>
+		
+		<p><span class="postCat"><a href="#">{{postCat}}</a></span> <span class="postBody">{{postBody}}</span></p>
+		<div class="row status">
+			<div class="col-md-12">
+			<p class="pull-right">
+		    	<span class="glyphicon glyphicon-heart-empty"></span>
+		    	<span>{{postLikes}}</span>
+		    	<span class="margin-right"></span>
+		    	<span class="glyphicon glyphicon-comment"></span>
+		    	<span>{{postComments.length}}</span>			
+			</p>
+			</div>
+		</div>		
+	</li>
 </ul>
