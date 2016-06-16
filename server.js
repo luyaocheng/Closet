@@ -19,6 +19,7 @@ app.use('/api', require('./Server/routes/api'))
 app.use('/js', express.static(__dirname + '/web_client/js'));
 app.use('/css', express.static(__dirname + '/web_client/css'));
 app.use('/views', express.static(__dirname + '/web_client/views'));
+app.use('/resources', express.static(__dirname + '/web_client/resources'));
 
 app.get('/api/posts', closetServerController.list)
 

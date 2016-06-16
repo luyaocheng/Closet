@@ -47,32 +47,26 @@ header{
 	padding: 20px 0;
 }
 
-.floatAddBtn, .floatAddBtn:hover{
+.floatAddBtn{
 	position: fixed;
-	color: #fff;
-	bottom: 5%;
+	bottom: 8%;
 	right: 5%;
-	background: #81D8D0;
-	font-size: 25px;
-	font-weight: bold;
-	padding: 13px 26px 20px 26px;
-	border-radius: 35px;
+	width: 80px;
+	height: auto;
 	cursor: pointer;
-	text-decoration: none;
 	opacity: .9;
 }
 
 .AddPostWindow{
 	background: #fff;
-	padding: 20px;
 	width: 80%;
-	max-width: 300px;
-	height: 180px;
+	max-width: 450px;
+	height: 270px;
 	position: fixed;
 	bottom: 5%;
 	right: 5%;
-	border-radius: 20px;	
-
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: none;
 }
 
 /*Post Page*/
@@ -92,8 +86,8 @@ li.postLi{
 }
 
 li.postLi:hover{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin: 0 4% 10px 4%;
+	background: #f2f2f2;
 }
 
 p.postAuthorName{
@@ -104,10 +98,6 @@ p.postAuthorName{
 .status{
 	font-size: 12px;
 	color: #757575;
-}
-
-.margin-right{
-	margin-right: 10px;
 }
 
 span.talkMode{
@@ -146,3 +136,25 @@ span.talkMode{
 }
 
 
+/*Colors*/
+.closetColor{
+	background: #81D8D0;
+}
+
+/*Fonts*/
+.fontSmall{
+	font-size: 9px;
+}
+
+/*Postion*/
+.margin-top{
+	margin-top: 10px;
+}
+
+.margin-right{
+	margin-right: 10px;
+}
+
+.nowrap{
+	white-space: nowrap;
+}

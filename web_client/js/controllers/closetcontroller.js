@@ -9,6 +9,18 @@ app.controller('postDisplayController', ['$scope','$resource',
 			$scope.posts = result;
 		})
 
-		// $scope.posts = [];
+		$scope.createPost = function(){
+			$scope.posts.push({
+				authorName	: "Anonymous",
+				talkMode	: $scope.talkModeRadio,
+				postTime	: new Date(),
+				postCat		: $scope.postCat,
+				postBody	: $scope.postBody,
+				postLikes	: 0,
+				postCommentsLikes : 0,
+				postComments: "This is a testing comment."
 
+			})
+		}
 }])
+

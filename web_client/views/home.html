@@ -3,7 +3,8 @@
 <head>
 	<title>Closet - Nothing But Your Own Words.</title>
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="/css/custom.css">	
+	<link rel="stylesheet" type="text/css" href="/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
 </head>
 <body ng-controller='mainController'>
 <!-- 	<p class="sysMessage">{{sysMessage}}</p> -->
@@ -39,19 +40,11 @@
 		</div>
 	</header>
 </div>
-<div class="container-fluid">
+<div class="container-fluid animated fadeIn">
 	<div class="container">
 		<div ng-view class="subView"></div>
 	</div>
 </div>
-<a class="floatAddBtn" ng-click="showAddPostWindow=true">+</a>
-<div id="AddPostWindow" class="AddPostWindow" ng-show="showAddPostWindow">
-	<span>Anonymous or not</span>
-	<button class="btn btn-danger" ng-click="showAddPostWindow=false">        X</button>
-	<textarea placeholder="Say whatever you want, they don't care, but we do..."></textarea>
-	<button class="btn btn-default">Post</button>
-</div>
-
 
 <!-- Script -->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
