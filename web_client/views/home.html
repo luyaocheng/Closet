@@ -44,6 +44,13 @@
 		<div ng-view class="subView"></div>
 	</div>
 </div>
+<a class="floatAddBtn" ng-click="showAddPostWindow=true">+</a>
+<div id="AddPostWindow" class="AddPostWindow" ng-show="showAddPostWindow">
+	<span>Anonymous or not</span>
+	<button class="btn btn-danger" ng-click="showAddPostWindow=false">        X</button>
+	<textarea placeholder="Say whatever you want, they don't care, but we do..."></textarea>
+	<button class="btn btn-default">Post</button>
+</div>
 
 
 <!-- Script -->

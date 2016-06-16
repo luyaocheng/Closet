@@ -47,6 +47,34 @@ header{
 	padding: 20px 0;
 }
 
+.floatAddBtn, .floatAddBtn:hover{
+	position: fixed;
+	color: #fff;
+	bottom: 5%;
+	right: 5%;
+	background: #81D8D0;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 13px 26px 20px 26px;
+	border-radius: 35px;
+	cursor: pointer;
+	text-decoration: none;
+	opacity: .9;
+}
+
+.AddPostWindow{
+	background: #fff;
+	padding: 20px;
+	width: 80%;
+	max-width: 300px;
+	height: 180px;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	border-radius: 20px;	
+
+}
+
 /*Post Page*/
 ul.postUl{
 	list-style: none;
@@ -66,7 +94,6 @@ li.postLi{
 li.postLi:hover{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin: 0 4% 10px 4%;
-	cursor: pointer;
 }
 
 p.postAuthorName{
