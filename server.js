@@ -1,23 +1,21 @@
 var express = require('express')
-var app = express()
+var mongoose = require('mongoose')
 var bodyParser = require('body-parser')
-var closetServerController = require('./Server/controllers/closetcontroller')
-var mongoose  = require('mongoose')
+var closetServerController = require('./Server/controllers/closetServerController')
 
-mongoose.connect('mongodb://localhost:27017/test2db', function(err){
-	if (err){
-		console.log(err)
-	}
-	console.log("Connection successful!") //Check if the DB connection successful or not
-})
+mongoose.connect('mongodb://localhost/closetTestDb')
 
-// app.use(bodyParser())
+var app = express()
+app.use(bodyParser.urlencoded({	extended: true }))
+app.use(bodyParser.json())
 
 app.get('/', function(req, res){
 	res.sendFile(__dirname + '/web_client/views/home.html')
+	// /res.send("Hi this message is sending from Express()~~")
 })
 
-// app.use('/node_modules', express.static(__dirname + '/node_modules'))
+app.use('/api', require('./Server/routes/api'))
+
 app.use('/js', express.static(__dirname + '/web_client/js'));
 app.use('/css', express.static(__dirname + '/web_client/css'));
 app.use('/views', express.static(__dirname + '/web_client/views'));

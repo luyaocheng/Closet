@@ -9,6 +9,6 @@ app.controller('postDisplayController', ['$scope','$resource',
 			$scope.posts = result;
 		})
 
-		$scope.posts = [];
+		// $scope.posts = [];
 
 }])
