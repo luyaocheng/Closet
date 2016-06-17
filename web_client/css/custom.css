@@ -14,6 +14,11 @@ body{
 	padding: 0;
 	margin: 0;
 	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
 }
 
 .siteTitle>h2>a{
@@ -45,6 +50,7 @@ header{
 
 .subView{
 	padding: 20px 0;
+	margin-top: 140px;
 }
 
 .floatAddBtn{
@@ -61,7 +67,7 @@ header{
 	background: #fff;
 	width: 80%;
 	max-width: 450px;
-	height: 270px;
+	height: 300px;
 	position: fixed;
 	bottom: 5%;
 	right: 5%;
@@ -139,11 +145,24 @@ span.talkMode{
 /*Colors*/
 .closetColor{
 	background: #81D8D0;
+	border: none;
+}
+
+.closetFontColor{
+	color: #81D8D0;	
+}
+
+.whiteFontColor{
+	color: #fff;	
 }
 
 /*Fonts*/
 .fontSmall{
 	font-size: 9px;
+}
+
+.fontMedium{
+	font-size: 13px;
 }
 
 /*Postion*/
