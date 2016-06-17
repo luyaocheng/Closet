@@ -1,13 +1,13 @@
 <div ng-controller='postDisplayController'>
 <ul class="postUl">
-	<li class="postLi" ng-repeat="post in posts">
+	<li class="postLi animated flipInX" ng-repeat="post in posts | orderBy: '-postTime'">
 		<div class="row">
 	    	<div class="col-md-6">
-	    		<p class="postAuthorName"><span class="glyphicon glyphicon-user"></span> {{post.authorName}} <span class="talkMode"> {{post.talkMode}}:</span></p>
+	    		<p class="postAuthorName"><span class="glyphicon glyphicon-user"></span> {{post.authorName}}</p>
 	    	</div>
 	    	<div class="col-md-6">
 	    		<span class="pull-right postDateTime">
-	    		Said on {{post.postTime}}
+	    		<span class="talkMode"> {{post.talkMode}}</span> @ {{post.postTime | date:"H:mma, MM/dd/yy"}}
 	    		</span>
 	    	</div>
 	    </div>
@@ -64,7 +64,7 @@
 
 		</div>
 		<div class="margin-top">
-			<button class="btn btn-default pull-right closetColor whiteFontColor" ng-click="createPost()" ng-disabled="newPost.$invalid"><strong>Post</strong></button>		
+			<button class="btn btn-default pull-right closetColor whiteFontColor" ng-click="createPost()"  ng-disabled="newPost.$invalid"><strong>Post</strong></button>		
 			<span ng-show="newPost.$invalid" class="pull-right margin-right closetFontColor fontMedium">Please say something.</span>
 		</div>
 	</div>
